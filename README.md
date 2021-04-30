@@ -11,4 +11,4 @@ MultiElevator Controller with AT89C52, coursework for Embedded System.
 * OH51 2.7.0.0
 * Windows 10 20H2
 ## System Design
-![alt System Design](Proteus_Screen_Shot.jpg)
+![alt System Design](Proteus_Screen_Shot.png)
