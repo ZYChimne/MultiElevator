@@ -46,7 +46,7 @@ char dif_floor=0;
 void init_timer0(void){
 	TMOD=0x01;
 	TH0=(65536-50000)/256;
-	TL0=(65536-50000)/256;
+	TL0=(65536-50000)%256;
 	ET0=1;
 	EA=1;
 	TR0=1;
@@ -200,7 +200,7 @@ void press(void){
 }
 void timer0(void) interrupt 1{
 	TH0=(65536-50000)/256;
-	TL0=(65536-50000)/256;
+	TL0=(65536-50000)%256;
 	timer0_cnt++;
 	if(timer0_cnt%10==0){
 		time++;
